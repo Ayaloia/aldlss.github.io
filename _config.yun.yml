@@ -112,6 +112,14 @@ reward:
 
 footer:
   since: 2022
+  support:
+    enable: true
+    title: fasnakegod
+    link: https://www.pixiv.net/users/8605991
+    # logo: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/logo/upyun-logo.png
+    prefix: 背景图出处
+    # suffix: 
+
 
 say:
   enable: true
