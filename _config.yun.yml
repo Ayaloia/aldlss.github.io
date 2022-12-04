@@ -137,6 +137,9 @@ mourn:
 wordcloud:
   enable: true
 
+engine_search:
+  enable: false
+
 algolia_search:
   enable: true
   hits:
