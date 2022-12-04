@@ -29,7 +29,7 @@ jobs:
 
       - name: algolia
         env:
-          HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
+          ALGOLIA_ADMIN_API_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
         run: npm run algolia
 
       - name: Build
