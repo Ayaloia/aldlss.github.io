@@ -23,14 +23,14 @@ social:
 
 bg_image:
   enable: true
-  url: /images/93083972_p0.jpg
-  dark: /images/100439997_p0.jpg
+  url: https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic93083972_p0.jpg
+  dark: https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic100439997_p0.jpg
   blur: 1px # 设置背景模糊程度
   opacity: 0.8
 
 avatar:
   enable: true
-  url: /images/65452214.jpg
+  url: https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic65452214.jpg
   rounded: true
   opacity: 1
   mickey_mouse: false
@@ -71,7 +71,7 @@ toc:
   list_number: true
   max_depth: 6
   min_depth: 1
-  placeholder: 目录已遁入幻想
+  placeholder: 目录已进入幻想
   collapse: true
 
 post_edit:
@@ -152,3 +152,15 @@ google_analytics:
   # 站点配置文件`_config.yml`中的站点部署的 url 应与 CNAME 中的域名（或xxxxx.github.io）一致
 
 baidu_push: true
+
+wordcount:
+  enable: true
+  count: true
+  time: true
+
+pjax:
+  enable: true
+
+waline:
+  enable: true
+  serverURL: https://comment.blog.suwako.cn

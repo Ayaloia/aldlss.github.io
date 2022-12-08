@@ -104,19 +104,8 @@ theme: yun
 deploy:
   type: ''
 
-# https://github.com/LouisBarranqueiro/hexo-algoliasearch
+# https://github.com/thom4parisot/hexo-algolia
 algolia:
-  appId: "DUSZ6W4MJM"
-  apiKey: "9e1f8f806e4dae9f7444fb6dc988b22a"
-  # adminApiKey: 
-  chunkSize: 5000
-  indexName: "my_blog"
-  fields:
-    - content:strip:truncate,0,500
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
+  applicationID: 'DUSZ6W4MJM'
+  apiKey: '9e1f8f806e4dae9f7444fb6dc988b22a'
+  indexName: my_blog
