@@ -33,6 +33,15 @@ jobs:
           HEXO_ALGOLIA_INDEXING_KEY: ${{ secrets.HEXO_ALGOLIA_INDEXING_KEY }}
         run: pnpm run algolia
 
+      # submit_url
+      - name: submit_url
+        env:
+          BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
+          BING_TOKEN: ${{ secrets.BING_TOKEN }}
+        run: |
+          echo -E '${{ secrets.GOOGLE_TOKEN }}' > google_key.json
+          pnpm run deploy
+
       - name: Build
         run: pnpm run build
 
