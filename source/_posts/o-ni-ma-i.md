@@ -1,7 +1,7 @@
 ---
 title: 漫谈别当欧尼酱了
 date: 2023-01-19 01:56:12
-author: 刚看完漫画的aldlss
+author: 刚看完漫画的 aldlss
 categories:
 - 感想
 tags: 

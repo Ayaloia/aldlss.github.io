@@ -1,7 +1,7 @@
 ---
 title: 记一次晚上被锁在宿舍门外的经历
 date: 2022-12-21 00:09:44
-author: 刚刚回到宿舍的aldlss
+author: 刚刚回到宿舍的 aldlss
 categories:
 - 回忆
 tags: 

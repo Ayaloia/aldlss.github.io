@@ -1,7 +1,7 @@
 ---
 title: 第五届字节跳动青训营伴学笔记
 date: 2023-03-01 23:22:40
-author: 参加了字节青训营的aldlss
+author: 参加了字节青训营的 aldlss
 categories:
 - 心得
 tags: 
