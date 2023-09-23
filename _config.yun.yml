@@ -62,10 +62,10 @@ menu:
     icon: ri:settings-line
 
 pages:
-  # - name: 我的小伙伴们
-  #   url: /links/
-  #   icon: ri:genderless-line
-  #   color: dodgerblue
+  - name: 朋友们
+    url: /links/
+    icon: ri:genderless-line
+    color: dodgerblue
 
 toc:
   list_number: true
