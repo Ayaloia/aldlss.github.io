@@ -392,11 +392,11 @@ inline bool pushExist(int &st, int &ed)
 
 我按下了构建，也几乎是同时，我在问题列表里看到了这一行
 
-![waring0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230321220723.png)_噔噔咚_
+![waring0](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230321220723.png)_噔噔咚_
 
 同时，构建系统也爆出了警告
 
-![waring1](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E6%88%AA%E5%9B%BE20230321221234.png)_噔噔噔噔咚_
+![waring1](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E6%88%AA%E5%9B%BE20230321221234.png)_噔噔噔噔咚_
 
 我草？
 
@@ -430,4 +430,4 @@ inline bool pushExist(int &st, int &ed)
 
 只能说教训还是比较深刻的。
 
-![555](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230321223041.gif)_😭😭😭_
+![555](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230321223041.gif)_😭😭😭_

@@ -119,4 +119,4 @@ description: 玉玉了啊
 
 不过无论怎么说，这件离谱的事姑且算是告一段落了。搞得鸡飞狗跳的，打扰了许多人真是十分抱歉，我不一定什么都会做的。
 
-![睡觉](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720221221020450.jpg)_事实是我确实太脆弱了_
+![睡觉](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720221221020450.jpg)_事实是我确实太脆弱了_

@@ -33,10 +33,10 @@ MayCTF，本来是在别的地方看到了。当时开始的时候因为比较�
 ### 小紫
 期间错误的尝试就不多说了，我还一度怀疑过 shojo 是什么意思，最后查了查发现原来是少女的意思= =
 后面看到“八云紫老”这一串字感觉是不属于原来这个图的，然后而且还有没话没说完的感觉，又看到网上说 ctf 图片有个经典题型就是改长度宽度，于是就参考了一下 png 文件头，[PNG文件格式解析](https://blog.csdn.net/weixin_46352852/article/details/124707547)（这个还有例子，喜欢），并照着改了一下，果然是现形了，于是解压，看见 bmp，以及 hint:
-<img src="https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_yukari_shojo1.png" width=200><img src="https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_yukari_hint.jpg" width=300>
+<img src="https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_yukari_shojo1.png" width=200><img src="https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_yukari_hint.jpg" width=300>
 
 这个 hint 也是比较乐的梗图了，应该主要是想提示还有一个字没出来吧。所以判断应该差不多也是要改高度，于是也搜了搜 bmp 图片的文件头[常见图片格式分析-bmp，png](https://www.cnblogs.com/robin-oneway/p/13932982.html)（这个也有例子，喜欢）。不过 bmp 似乎不像 png 一样，改大了无所谓，只是会下面一片空，这个好像改大了直接就打不开了，于是就最后一点一点地加，也算是成功了：
-<img src="https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_yukari_shojo2.png" width=400>
+<img src="https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_yukari_shojo2.png" width=400>
 
 可以看到，在右上角，很小一撮，还以为会是也在下面来着。flag 也在上面，出题人最后也是不忘把“婆”字补上，祝你被脸滚键盘（
 PS：刚刚写 wp 的时候发现，似乎长度或宽度有缩减的 png 在 vscode 上不能直接预览（？或许也不失为一种快捷判断方法
@@ -181,18 +181,18 @@ if __name__ == "__main__":
 ### sheep
 游戏是羊了个羊翻版据说，但是我是没玩过的。自然是不可能玩游戏的，直接 F12，一开始还以为真的通过就行了，还寻思是不是要改 cookie，于是把记录里的第二关通过次数改成了 1，结果没反应。
 后来直接一看源码才发现原来已经写着了:
-![sheep2](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_sheep_sheep2.png)
+![sheep2](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_sheep_sheep2.png)
 于是跑了一下那串代码，发现是要 “hack brower”，一开始还以为是什么术语或者黑话，搜了一下但是没什么相关的。看到群里说需要什么伪造什么，我寻思就是 User-Agent 或者 cookie 吧，注意到网站每次都会把本地 cookie 中的 user 设为 guest，我寻思大概是脱不了关系的，但是用火狐的这个也没有反应，我还寻思是不是我什么没考虑到
-![sheep0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_sheep_sheep0.png)
+![sheep0](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_sheep_sheep0.png)
 后来写别的题目才发现，用这个发送根本不会刷新网页，感觉不如
-![sheep1](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_sheep_sheep1.png)
+![sheep1](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_sheep_sheep1.png)
 于是用这个把 User-Agent 改为 hack 并且把 cookie 中的 user 改成 admin 后，成功获得了 flag
 不过这些错误倒是一定程度上让我学到更多知识，甚至考虑到 hack 是不是要用 webshell 进去之类的- -，前面那道题能很快写出来大概也多亏了在这里提前有了解到吧。
 
 ### 举报小黑子&鬼人正邪的挑战
 下午主要试了试这两题，不过都失败了。小黑子这题用了网上的 xss 平台，然而并没有反应，搞了好久也没什么进展，润了。
 正邪这题，给了 1500 个碎片，然后每 30 个碎片有一个下划线，我猜测是每 30 个一行或者说一列之类的，最后把所有碎片拼起来这样子。于是用 React 写了一下，最后的结果是有点东西又有点不明所以的图片
-![seija1](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_Seija_seija1.png)
+![seija1](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_Seija_seija1.png)
 也试了改了各种参数和翻转之类的，都没有什么效果，于是只好忍痛放弃。
 
 ### hello_net
@@ -202,7 +202,7 @@ if __name__ == "__main__":
 按着解题人数做的，然后就是这题了。这题一开始也整不明白，hint 说的 cfg 我也没想明白是什么意思，只能想到之前AI画图的那个 `CFG Scale` 了（
 后来就直接上 IDA，这流程也没看明白是什么意思，想着看看流程图的，结果 IDA 跟我说节点太多了，要调高上限才可以打开，后来把 `1000` 调到了 `100000`，终于打开了。不得不说确实是很震撼的，居然是能在流程图画图，不知道怎么做到的。
 左下角就是 flag，但是我是真的看不清是什么= =
-![cfg0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_cfg_cfg0.png)
+![cfg0](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_cfg_cfg0.png)
 最后三个单词大概猜出来是 `control flow graph`，也就是所说的 `cfg`，上面一个是 `secret`，然后最上面那个单词琢磨了好一会才想到原来是 `$(author)`，应该是要用作者替换。看到题目说明里还专门把出题人 `secsome` 标了出来，大概是八九不离十了。
 当然最后还是因为眼瞎的问题试了好久 flag，以至于有 staff 在后台看不下去了，提醒了一下我 flag 有地方看错了，可是这真的看不清楚啊5555
 
@@ -275,15 +275,15 @@ if __name__ == "__main__":
 ### shape_secret
 这题是新出的，本来看到有一个一页多的文档就退缩了，后来看到连着有两个人解出来，就觉得不太对劲，遂去看了一下文档。
 注意看这里
-![shape_secret0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_shape_scr_0.png)
+![shape_secret0](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_shape_scr_0.png)
 有一个专有名词 `Westwood`，我一开始就想到那个制作命令与征服的游戏厂，但觉得不太对劲，寻思会不会还有别的意思，然而发现基本没有，于是又检索了一下另一个文件的后缀 `.shp` 和西木什么关系，发现这个大概是西木游戏里的一个特殊的图像文件格式。
 那么可以大概推断，肯定是有相关的编辑器或者阅览器的。果不其然，有的：[Image_Shaper](https://github.com/LinKueiOminae/Image_Shaper)，于是下载下来就可以看了
-不过这个![shape_secret1](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_shape_scr_1.png)一开始还以为是 `θ` 来着= =
+不过这个![shape_secret1](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_shape_scr_1.png)一开始还以为是 `θ` 来着= =
 
 ### maze
 hint 也说得比较清楚了，要先用 `UPX` 脱壳，不过 4.0.0 的版本好像脱不了，得用 3.X 的版本。
 其实应该是不用怎么读源码逻辑的
-![maze0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_maze_0.png)
+![maze0](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_maze_0.png)
 这些不明所以的字符其实每行分别排下来就是迷宫的样子，只要输入 `WASD` 能从左上角走到右下角并且不撞墙就行了，然后对输入取 sha256 就好了
 
 ### mixture
@@ -336,7 +336,7 @@ func AesDecrypt(cryted string, key []byte) string {
 }
 ```
 主要还是得看到先经过了一次 base64 解密，以及 Aes 的 iv 参数大概就是 key 的前 16 个字节
-![mix0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_mix_0.png)
+![mix0](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_mix_0.png)
 这样解密就可以出答案了
 
 > 这里忍不住后期插播一下，过了几个月，现在我已经学会 go 了，看到这些代码突然又有种莫名的感慨
@@ -350,10 +350,10 @@ func AesDecrypt(cryted string, key []byte) string {
 ### 禁忌 四重存在
 这题确实扣题了，这个文件里面总共存在着四个文件，分别是 png（源文件）、jpg、gif 以及 zip，不过按顺序来说，我是倒着把她们分离出来的。
 首先是拉到最下面可以看到 zip 的文件尾，具体格式可以看这个：[压缩包Zip格式详析](https://blog.csdn.net/qq_43278826/article/details/118436116)，说的确实很好。这块就是把文件头的 `50 4b 03 04` 给替换掉了，改回来就可以分离了。
-![flan0](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_0.png)
+![flan0](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_0.png)
 关于怎么找到这块，我使用文件尾的偏移量计算的，不过看起来似乎会有更好的查找方法。如果分离出来解压不了，用工具修复一下就可以了。
 解压出来是`禁忌-四重存在.tiff`，打不开，一开始以为是 tiff 文件头之类的格式问题，后来用 binwalk 一扫，感觉不简单了
-![flan1](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_1.png)
+![flan1](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_1.png)
 Zlib 文件，于是上网查找了一下该怎么做，发现用 python 提取解压挺方便的，[CTF 隐写 关于ZLIB的解压](https://www.freesion.com/article/4333303676/)，这个文章挺好的，关于思路上对我也有点启发。最后把前面不明所以的东西删掉后，用如下代码实现提取：
 ```python
 import zlib
@@ -397,19 +397,19 @@ if __name__ == "__main__":
     main()
 ```
 结果图如下：
-<img src="https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_ffflan.png" width=480>
+<img src="https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_ffflan.png" width=480>
 
 虽然有点抽象，但还是发现了神秘代码，结果直接当 flag 不对，各种解码也解不出来，最后请教了下出题人才知道原图还有东西我没有发现。
 [CTFmisc常见文件头和尾](https://blog.csdn.net/Hardworking666/article/details/121335822)，文件头都被藏起来了，但是文件尾还是有的，通过搜索文件尾发现有 gif 和 png 在里面，于是开始提取。首先提取的是 gif，参考了这个[GIF文件格式详解](https://blog.csdn.net/zz460833359/article/details/123068320)，都是有例子的，还是挺好的，可以参照着看
-![flan2](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_2.png)
+![flan2](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_2.png)
 gif 把划出来的修改为 `47 49 46 38` 就好了，然后就可以用 python 提取了——foremost 不太靠谱，会碰到数据中的 gif 规定的结束字符提前结束提取，但实际上后面还有一大块都没提取出来，导致出来的图片基本上整张都是黑的。
 提取出来的结果是这样的：
-![flangif](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_ffflan.gif)
+![flangif](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_ffflan.gif)
 可以看到 flag 的尾部已经出来了。
 接下来是提取 png，png 这块有点不寻常，头部没有被替换，是有一块被直接删掉了，因此可以先提取出来，然后插入头部，具体格式可以参考这个[【CTF】【winhex】超详细jpg图片结构分析](https://blog.csdn.net/weixin_45720193/article/details/127393748)，不过插入数据的话其实找一张其他的 png 的文件头，复制过来就好了
-![flan3](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_3.png)
+![flan3](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_3.png)
 如图，在头部添加上这段 `ff d8 ff e0 00 10 4a 46 49 46 00 01 01 00 00 01 00 01 00 00 ff`，我的编辑器还会抽风，把 `00` 复制成 `20`，不知道为什么。顺带一提，后面的这个 `Adobe` 属实是有点误导了，找了很久相关的格式，最后发现好像并没有什么关系的样子。
 提取出来的是这样的：
-![flanjpg](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picmayctf2022_flan_ffflan.jpg)
+![flanjpg](https://cdn.suwako.cn/aldlss-blog/pic/picmayctf2022_flan_ffflan.jpg)
 这样，flag 的前段、中段、后段就凑齐了。
 不得不说，四张图，果然是四重存在啊，感觉是很好的创意。也恭喜芙兰获得人气投票冠军了，虽然更喜欢魔理沙一点。

@@ -280,7 +280,7 @@ goroutine 就属于协程。协程的话，我之前一度以为这是 Go 语言
 
 关于并发和并行的区别，我认为下面这张图还是能比较好地说明的：
 
-![1](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230117011906.png)
+![1](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230117011906.png)
 
 图中，上方的是并发，下方的是并行。
 
@@ -323,7 +323,7 @@ ORM 全称 "Object Relational Mapping"，翻译过来就是“对象关系映射
 
 下图简单说明了上面所提到的 ORM 的部分功能：
 
-![ORM](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picORM.drawio.png)
+![ORM](https://cdn.suwako.cn/aldlss-blog/pic/picORM.drawio.png)
 
 当然，ORM 的优势不只在于这些，不过这里就大概说这么多了。
 
@@ -341,7 +341,7 @@ RPC 全称 "Remote Procedure Call"，即远程过程调用。通过这个技术�
 
 整个过程可参考下图：
 
-![RPC](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic28d77e43b38d4f73b68568bd5d3ebc69.png)
+![RPC](https://cdn.suwako.cn/aldlss-blog/pic/pic28d77e43b38d4f73b68568bd5d3ebc69.png)
 
 同样的，我们再讲一下 RPC 相对于本地调用的一些区别或优势。
 
@@ -533,7 +533,7 @@ int main() {
 ```
 
 至于题解，本想说挖个坑的，但是一想到后面肯定不会填的，不如就直接说不写了吧（
-![寄！](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic%E5%AF%84QQ%E5%9B%BE%E7%89%8720230301234428.jpg)_题解应该是寄了_
+![寄！](https://cdn.suwako.cn/aldlss-blog/pic/pic%E5%AF%84QQ%E5%9B%BE%E7%89%8720230301234428.jpg)_题解应该是寄了_
 
 ***
 

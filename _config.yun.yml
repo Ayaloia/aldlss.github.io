@@ -23,14 +23,14 @@ social:
 
 bg_image:
   enable: true
-  url: https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic93083972_p0.jpg
-  dark: https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic100439997_p0.jpg
+  url: https://cdn.suwako.cn/aldlss-blog/pic/pic93083972_p0.jpg
+  dark: https://cdn.suwako.cn/aldlss-blog/pic/pic100439997_p0.jpg
   blur: 1px # 设置背景模糊程度
   opacity: 0.8
 
 avatar:
   enable: true
-  url: https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/pic65452214.jpg
+  url: https://cdn.suwako.cn/aldlss-blog/pic/pic65452214.jpg
   rounded: true
   opacity: 1
   mickey_mouse: false

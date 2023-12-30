@@ -34,13 +34,13 @@ description: 令人感叹
 
 不得不说，南京的轨道交通还是有点意思的，去仙林校区的后半段都是在桥上开的吗，风景很好。而且到仙林校区站之后能一眼就从桥上看到四个大石头上面写着“南京大学”四个大字，非常震撼，让人瞬间产生顶礼膜拜之情，感觉比你武不知道高到哪里去了。
 
-![眺望](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230523175026.jpg)_极具震撼的大门_
+![眺望](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230523175026.jpg)_极具震撼的大门_
 
 进校门后也是边走边拍，真的感觉就是非常震撼，还看到了那个热气球。当然首要目标还是去酒店放东西，去的是酒店是南大国际会议中心，听名字就很高大上，进去之后感觉环境还是可以的。不过要说的话大概也是跟我为数不多住过的酒店差不多，想来上次住酒店大概还是去桂林比 GXCPC 的时候吧，再上次，估计就是去南宁考自主招生考试的时候了，感慨。
 
-![外景](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230523180421.jpg)_外景_
+![外景](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230523180421.jpg)_外景_
 
-![内景](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230523180425.jpg)_内景_
+![内景](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230523180425.jpg)_内景_
 
 ## 转转校内
 
@@ -48,7 +48,7 @@ description: 令人感叹
 
 听同学说他们之前经常上天文山，说我也可以去看看。正好旁边有个上山的路，于是就直接上去了，上到上面发现大概是一个露天农业站？感觉要说的话好像差点意思，问了同学才知道：上错山了。正确的应该是对面那个有几个圆顶的那个山，我愕然。
 
-![对面的山才对](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picQQ%E5%9B%BE%E7%89%8720230523181829.jpg)_深绿掩映的圆顶(在中间绿树和蓝天的交界处)_
+![对面的山才对](https://cdn.suwako.cn/aldlss-blog/pic/picQQ%E5%9B%BE%E7%89%8720230523181829.jpg)_深绿掩映的圆顶(在中间绿树和蓝天的交界处)_
 
 那还是得去看看的，于是就下山，规划了个去对面那边的路线，路上顺便也能感受一下南大的其他风景。
 
@@ -60,7 +60,7 @@ description: 令人感叹
 
 反正就是走，把各个学院外观基本上都看了一下，还看到有处亭子，挺高雅的。然后去对面天文台，路上还看到了些人，结果走山路走到顶上发现没开，只能在外面看看，乐。
 
-![天文台](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picIMG_20230520_173533.jpg)
+![天文台](https://cdn.suwako.cn/aldlss-blog/pic/picIMG_20230520_173533.jpg)
 
 然后继续猛走，走了条好像是去另一个天文台还是什么的大路，很长，路上也什么也没有。结果是那边没什么好看的，甚至说还看不到，因为有个校门，大概似乎能看的东西在外边。
 
@@ -68,7 +68,7 @@ description: 令人感叹
 
 继续走，看到了计算机学院，这个你武的好像真的有点赢。不过似乎南大是软工和 AI 猛吧？感觉计科声浪比较小，唉但是能去也好啊。
 
-![计算机学院](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picIMG_20230520_185237.jpg)
+![计算机学院](https://cdn.suwako.cn/aldlss-blog/pic/picIMG_20230520_185237.jpg)
 
 猛走，走到天色都暗下来的，最后没见到南大的同学，南大的食堂也没吃到，非常愉快地吃了经典麦当劳 1+1，然后就回酒店了。
 
@@ -84,7 +84,7 @@ description: 令人感叹
 
 签到领牌子找座位，还发了餐券，一日三餐都包了还是挺好的。
 
-![少女所见的珞珈山风景](https://fastly.jsdelivr.net/gh/Ayaloia/ImgHosting/picIMG_20230521_082619.jpg)
+![少女所见的珞珈山风景](https://cdn.suwako.cn/aldlss-blog/pic/picIMG_20230521_082619.jpg)
 
 不得不还是赞叹自己的起名。
 
