@@ -108,8 +108,8 @@ deploy:
 
 # https://github.com/thom4parisot/hexo-algolia
 algolia:
-  applicationID: 'DUSZ6W4MJM'
-  apiKey: '9e1f8f806e4dae9f7444fb6dc988b22a'
+  applicationID: '6DU0M8BK56'
+  apiKey: '150fc918f0984779f375a239bdba0d3b'
   indexName: my_blog
 
 # https://github.com/cjh0613/hexo-submit-urls-to-search-engine
