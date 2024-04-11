@@ -30,14 +30,14 @@ bg_image:
 
 avatar:
   enable: true
-  url: https://cdn.suwako.cn/aldlss-blog/pic/pic65452214.jpg
+  url: https://cdn.suwako.cn/aldlss-blog/avatar.jpg
   rounded: true
   opacity: 1
   mickey_mouse: false
   status:
-    enable: false
+    enable: true
     emoji: 😭
-    message: 不想上学
+    message: 不想上班
 
 menu:
   home:
@@ -57,8 +57,8 @@ menu:
   #   #   icon: ri:cloud-line
   #   #   count: 你猜
   custom:
-    title: 土著神的顶点
-    path: https://god.suwako.cn
+    title: 根
+    path: https://suwako.cn
     icon: ri:settings-line
 
 pages:
