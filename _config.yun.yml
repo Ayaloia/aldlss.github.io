@@ -20,6 +20,10 @@ social:
     link: mailto:aya@suwako.cn
     icon: ri:mail-line
     color: '#8E71C1'
+  - name: bilibili
+    link: https://space.bilibili.com/5915138
+    icon: ri:bilibili-line
+    color: '#FA85A3'
 
 bg_image:
   enable: true
@@ -36,8 +40,8 @@ avatar:
   mickey_mouse: false
   status:
     enable: true
-    emoji: 😭
-    message: 不想上班
+    emoji: 🤔
+    message: 那咋办
 
 menu:
   home:
@@ -57,9 +61,9 @@ menu:
   #   #   icon: ri:cloud-line
   #   #   count: 你猜
   custom:
-    title: 根
-    path: https://suwako.cn
-    icon: ri:settings-line
+    title: resume
+    path: https://resume.aldlss.work
+    icon: ri:article-line
 
 pages:
   - name: 朋友们
