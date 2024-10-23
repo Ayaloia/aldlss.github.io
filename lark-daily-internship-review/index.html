@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="aldlss"><meta name="copyright" content="aldlss"><meta name="generator" content="Hexo 7.3.0"><meta name="theme" content="hexo-theme-yun"><title>飞书前端日常实习回顾 | 风文觉天</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/star-markdown-css@0.4.1/dist/yun/yun-markdown.min.css"><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/prism-theme-vars/base.css"><script src="https://fastly.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>function initScrollReveal() {
+  [".post-card",".markdown-body img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+}
+document.addEventListener("DOMContentLoaded", initScrollReveal);
+document.addEventListener("pjax:success", initScrollReveal);
+</script><script src="https://fastly.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer type="module"></script><script src="https://fastly.jsdelivr.net/npm/vue@2.6.14"></script><link rel="icon" type="image/png" href="/favicon.ico"><link rel="mask-icon" href="/favicon.ico" color="#0078E7"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="preconnect" href="https://fastly.jsdelivr.net/npm/" crossorigin><script id="yun-config">
+    window.Yun = {}
+    window.CONFIG = {"hostname":"blog.suwako.cn","root":"/","title":"信仰是为了虚幻之人","version":"1.10.11","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.yunyoujun.cn/img/avatar/none.jpg","say":{"api":"/data/sentences.json"},"algolia":{"appID":"369JG8XO7A","apiKey":"2092ffcf9f08941419048a10d4abd5f5","indexName":"blog","hits":{"per_page":10}},"fireworks":{"colors":null},"waline":{"config":{"enable":true,"serverURL":"https://comment.blog.suwako.cn","comment":false,"el":"#waline","lang":"zh-CN"},"cdn":"https://fastly.jsdelivr.net/npm/@waline/client@v2/dist/waline.js","dark":"html.dark"},"vendors":{"host":"https://fastly.jsdelivr.net/npm/","darken":"https://fastly.jsdelivr.net/npm/darken@1.5.0"}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><link rel="preconnect" href="https://www.google-analytics.com" crossorigin><script async src="https://www.googletagmanager.com/gtag/js?id=G-JLJZK2MK9C"></script><script>if (CONFIG.hostname === location.hostname) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-JLJZK2MK9C');
+}</script><script>//- only for pjax
+function sendPageView() {
+  if (CONFIG.hostname !== location.hostname) return;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('event', 'page_view', {
+    page_path: encodeURIComponent(location.pathname),
+  })
+}
+document.addEventListener("pjax:success", sendPageView);</script><meta name="description" content="从零开始的实习生活">
+<meta property="og:type" content="article">
+<meta property="og:title" content="飞书前端日常实习回顾">
+<meta property="og:url" content="https://blog.suwako.cn/lark-daily-internship-review/index.html">
+<meta property="og:site_name" content="风文觉天">
+<meta property="og:description" content="从零开始的实习生活">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401154740.jpg">
+<meta property="og:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401154751.jpg">
+<meta property="og:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401161437.jpg">
+<meta property="og:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401164329.jpg">
+<meta property="og:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401171513.jpg">
+<meta property="og:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401175222.gif">
+<meta property="article:published_time" content="2024-04-01T07:15:12.000Z">
+<meta property="article:modified_time" content="2024-04-01T09:51:00.000Z">
+<meta property="article:author" content="aldlss">
+<meta property="article:tag" content="实习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401154740.jpg"><script>(function() {
+  if (CONFIG.mode !== 'auto') return
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  const setting = localStorage.getItem('darken-mode') || 'auto'
+  if (setting === 'dark' || (prefersDark && setting !== 'light'))
+    document.documentElement.classList.toggle('dark', true)
+})()</script></head><body><script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script><script>// Define global variable
+IconifyProviders = {
+  // Empty prefix: overwrite default API provider configuration
+  '': {
+    // Use custom API first, use Iconify public API as backup
+    resources: [
+        'https://api.iconify.design',
+    ],
+    // Wait for 1 second before switching API hosts
+    rotate: 1000,
+  },
+};</script><script defer src="https://fastly.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="文章目录"><span class="icon iconify" data-icon="ri:list-ordered"></span></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="站点概览"><span class="icon iconify" data-icon="ri:passport-line"></span></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="aldlss"><img width="96" loading="lazy" src="https://cdn.suwako.cn/aldlss-blog/avatar.jpg" alt="aldlss"><span class="site-author-status" title="那咋办">🤔</span></a><div class="site-author-name"><a href="/about/">aldlss</a></div><a class="site-name" href="/about/site">风文觉天</a><sub class="site-subtitle">信仰是为了虚幻之人</sub><div class="site-description">在学了在学了</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:home-4-line"></span></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:archive-line"></span></span><span class="site-state-item-count">15</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:folder-2-line"></span></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="site-state-item-count">11</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://resume.aldlss.work" title="resume"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:article-line"></span></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/aldlss" title="GitHub" target="_blank" style="color:#181717"><span class="icon iconify" data-icon="ri:github-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:aya@suwako.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><span class="icon iconify" data-icon="ri:mail-line"></span></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/5915138" title="bilibili" target="_blank" style="color:#FA85A3"><span class="icon iconify" data-icon="ri:bilibili-line"></span></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="朋友们" style="color:dodgerblue"><span class="icon iconify" data-icon="ri:genderless-line"></span></a></div><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><span class="icon iconify" data-icon="ri:contrast-2-line"></span></a></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#First-Day"><span class="toc-number">1.</span> <span class="toc-text">First Day</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Landing"><span class="toc-number">2.</span> <span class="toc-text">Landing</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E9%9C%80%E6%B1%82"><span class="toc-number">3.</span> <span class="toc-text">第一个需求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B7%B1%E5%9C%B3%EF%BC%81"><span class="toc-number">4.</span> <span class="toc-text">深圳！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%BB%E9%9B%A8%EF%BC%9F%E5%B1%85%E5%AE%B6%EF%BC%81"><span class="toc-number">5.</span> <span class="toc-text">冻雨？居家！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B9%B2%E5%B9%B2%E5%B9%B2"><span class="toc-number">6.</span> <span class="toc-text">干干干</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E8%B6%85%EF%BC%8C%E5%BC%80%E5%AD%A6"><span class="toc-number">7.</span> <span class="toc-text">我超，开学</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#12-%E5%91%A8%E5%B9%B4"><span class="toc-number">8.</span> <span class="toc-text">12 周年</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%86%EF%BC%81"><span class="toc-number">9.</span> <span class="toc-text">爆！</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">10.</span> <span class="toc-text">总结</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article" style="--smc-primary:#0078E7;"><link itemprop="mainEntityOfPage" href="https://blog.suwako.cn/lark-daily-internship-review/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="aldlss"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="风文觉天"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">飞书前端日常实习回顾<a class="post-edit-link" href="https://github.com/Ayaloia/aldlss.github.io/tree/master/source/_posts/lark-daily-internship-review.md" target="_blank" title="编辑" rel="noopener"><span class="icon iconify" data-icon="ri:edit-line"></span></a></h1><div class="post-meta"><div class="post-time" style="display:block"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:calendar-line"></span></span> <time title="创建时间：2024-04-01 15:15:12" itemprop="dateCreated datePublished" datetime="2024-04-01T15:15:12+08:00">2024-04-01</time></div><span class="post-count"><span class="post-symbolcount"><span class="post-meta-item-icon" title="本文字数"><span class="icon iconify" data-icon="ri:file-word-line"></span></span> <span title="本文字数">3.9k</span><span class="post-meta-divider">-</span><span class="post-meta-item-icon" title="阅读时长"><span class="icon iconify" data-icon="ri:timer-line"></span></span> <span title="阅读时长">13m</span></span></span><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><span class="icon iconify" data-icon="ri:folder-line"></span></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/%E5%9B%9E%E5%BF%86/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">回忆</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/%E5%AE%9E%E4%B9%A0/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><span class="icon iconify" data-icon="ri:price-tag-3-line"></span></span><span class="tag-name">实习</span></a></span></div><div class="post-author"><span class="author-name">刚离职不久的 aldlss</span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><p>不知不觉也就实习三个月了，前几天刚刚离职，也是权当记录回顾一下罢。<br>应该还会有另一篇经验总结，这篇就是纯记录回忆了大概。</p>
+<span id="more"></span>
+
+<h1 id="First-Day"><a href="#First-Day" class="headerlink" title="First Day"></a>First Day</h1><p>第一天还是比较激动欣喜的，而且因为拿不准路上的时间，所以预留了不少时间，反而到得比较早。路线大概是坐地铁到华科，然后一直走到保利国际广场那边，最后算起来是大概 40~50 分钟这样子。</p>
+<p>因为说是 10 点报道，到的时候才九点多，寻思到太早也不太好，于是就在下面的商场广场逛了一下消磨时间，快十点才上去。这种写字楼要刷卡进去，一开始真不知道，结果就是让前台帮忙了。没想到上去后的布局是一进去就到字节的大门了，看起来是一层楼一个公司这样子。结果进去后被引到会议室等了好一段时间，期间碰到另一个大哥，聊了一下好像是外包？最后来人，加了楼宇的饮食生活群，然后去另一层楼领电脑，就是说字节在这里是有两层的。</p>
+<p><img src="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401154740.jpg" alt="向窗外看去" loading="lazy"><em>11th</em></p>
+<p>这样写下去感觉会写太多- -，加速一下。总之一开始领了 Windows，下去找到接我的组长后组长大惊推荐我换一个 Mac，遂再去更换。人生中第一次用 Mac 就是这里了，这个 MacBook Pro 是 2019 年 16 英寸版的，虽然有 32 G，但是后面发现性能不太行，有点跑不动……<br>Mac 的话不多说，确实是有说法的，触控板和外放音响都有说法，外放真好听吧，然后充电确实也很方便，但是不知道为什么放在公司桌子以外的地方充电摸起来总有点漏电……</p>
+<h1 id="Landing"><a href="#Landing" class="headerlink" title="Landing"></a>Landing</h1><p>Landing，才知道进来不是做飞书，是做飞书云文档里的多维表格，反正就看 Landing 文档吧。一开始的几天都在看 Landing 文档，然后也尽力和组里的米娜熟悉一下，组里的同事还是很友善的，当时进来的时候刚好赶上了好几次聚餐，吃爽了。而且也可以感觉到他们是尽力想和我找点语言聊，但我真的什么有趣的都聊不出来，好悲伤……</p>
+<p>一开始的几天主要就是配环境、写产品体验报告和做一大堆学习课程，学习课程是真痛苦，到底哪来这么多的，他们怎么做得完的？后来才发现大概也就入职的时候才多吧，后面三个月基本都没有新的课程……<br>配环境也是比较有点，只能说起码用的是 pnpm 还是挺好的，多的不好说。<br>产品体验报告怎么说呢，算是主要任务，但是写起来真的抓耳挠腮，到底是该真的就体验还是要指出一些 bug 和问题？最后也是疯狂参考别人的体验报告，只能说还好飞书新进群的也能看到历史记录，赢。</p>
+<p>还有就是看看有什么福利可以拿的，不得不说福利还是可以的，咖啡、小零食、下午茶什么的都有，可以免费领纸巾之类的，还有什么打折买饮料（这个我就最后走之前体验了一下），不过因为每餐都会发饮料，其实也不是很缺饮料喝。<br>不过最大的好处还是刚好可以领新年礼盒，只能说血赚好吧，简单拿下小音箱，确实是有素质的，但感觉还是比 Mac 外放差点水平。</p>
+<p><img src="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401154751.jpg" alt="新年礼盒" loading="lazy"><em>一起律动</em></p>
+<h1 id="第一个需求"><a href="#第一个需求" class="headerlink" title="第一个需求"></a>第一个需求</h1><p>好说歹说终于把体验报告写完了，结果就开始让我做需求了，虽然我 Landing 文档好像还没看完，但是确实感觉边写边体会也是可以的。</p>
+<p>一看这个需求是拖了几个月还没人力做的，只能说正常（<br>做的时候也才是第一次部分体会到大厂正规的流程协作，以及一些交流话术，感觉现在有时候说话都会不自觉带有一股那种话术的感觉，不好说好还是不好。其实感觉进来之后学到最多的除了一些技术就是很多协作上、软件工程上、流程上、沟通上的东西。</p>
+<p>第一次的需求就要更新库依赖的包版本，老实说不是很有信心啊。<br>而且确实搞砸了，具体说来就是我根本不知道我要做什么，以为包版本什么的是得别人更新呢，还有很多地方也都没有考虑到。结果就是测试的时候爆了，基本上什么都没有。也得亏带我的大哥帮我找了几个理由开脱然后延期了。<br>你吗，这次确实得认真搞了。仔细整理发现我之前做的确实一坨，于是重做了。重做之后才发现我之前写的到底是什么鬼，缺了太多的代码了。</p>
+<p>其实做这次东西还是体验到了许多，比如说升级包版本、提 Oncall、和后端沟通加 API 等，最重要的还是大概有个该怎么做的印象了吧。</p>
+<h1 id="深圳！"><a href="#深圳！" class="headerlink" title="深圳！"></a>深圳！</h1><p>我草是真爽到，这都有深圳出差哦。去深圳出差一周，刚好学校也放假了，爽去！酒店来回都包了，甚至从高铁站和酒店往返也包，感觉就是白吃白住啊（</p>
+<p>不过去深圳当然不是玩的，甚至路上好像也有在 Work 的。当然也不全不是，周五周六的时候还真是去团建玩，挺好的。</p>
+<p>不得不说住的酒店的环境是真不戳，感觉就没住过这么好的酒店——当然可能也有，就是上次南大那次（——甚至有个斜角的大落地窗，直接正对着字节的大楼，太炫酷了。<br>说到字节的楼，确实好像就是整栋都是字节的，确实是极具震撼。好像是有 40 多层吧，餐厅也多多，但吃了几次实话说，选择太多也不一定好，我甚至有点感觉不如武汉（</p>
+<p><img src="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401161437.jpg" alt="极具震撼的大楼" loading="lazy"><em>左边是字节大楼</em></p>
+<p>不得不说去深圳那周确实是比较休闲快乐。刚来和走的时候面见了在哈深的朋友，简单看了一下他们大学城的环境，讨论了一下偷猴社群。然后每晚的时候都吃着从公司毛来的零食然后看大电视，我寻思真挺休闲的吧。</p>
+<p>后面集体团建也不错，去了某个海边玩，还坐船去海上感受了一下，属实是第一次。海啊，碧波荡漾。</p>
+<p>说到 Work 的话，在这里的几天主要也是修几个 Bug 和写一个新需求或者说 Polish 的技术方案。技术方案这东西，之前没写过，所以一开始以为只是给个大概的方向，结果说不是。是要基本比较详细写出要这么做，写出定义的结构体和改动之类的。<br>这样一想其实也是有道理的，详细写出来之后确实方便评估，然后也可以比较准确地估时，不过确实这样写方案也需要不少时间。就我来说，我写方案的时间跟写代码的时间平齐了都。</p>
+<h1 id="冻雨？居家！"><a href="#冻雨？居家！" class="headerlink" title="冻雨？居家！"></a>冻雨？居家！</h1><p>其实过去深圳和回来武汉都不容易，路上都有冻雨的侵扰。从深圳回来武汉后，冻雨也是只增不减。</p>
+<p>其实回来之后也就差不多再上一周就回去过春节了，不过这周冻雨确实疯狂，路上真的太滑了。</p>
+<p><img src="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401164329.jpg" alt="冬雨后的景象" loading="lazy"><em>事雪啊</em></p>
+<p>某日早上起来，发现外面实在雪太大了，看了下飞书，发现居然说今天居家办公，才知道原来还有这种操作。<br>不过比较尴尬的是没有带电脑，于是只好用自己电脑看看飞书课程，搞搞多维表格，假装自己还在努力一下吧（<br>第二天当然是一早过去了，后续几天也记得拿电脑力。结果是果不其然，后面几天好几天都是大冻雨，好像是连着几天居家了，有一天甚至要求必须居家。不过居家这事怎么说呢，有利有弊吧，利好就是可以摸鱼，但是弊端也是各种伙食待遇就享受不到了。我好像就摸了一两天鱼，为之后的事埋下了伏笔。</p>
+<h1 id="干干干"><a href="#干干干" class="headerlink" title="干干干"></a>干干干</h1><p>春节，怎么说都是不可能干的了，虽然确实有很多没做完，但是总不能真干吧。于是就是上班前一天晚上开始加班加点地干了。这是真的没睡觉了，要知道前一天为了赶高铁其实也没怎么睡来着，只能说还好没似。</p>
+<p>怎么说呢，结果最后很多的代码是在提测当天写完的，写到巨晚。唉不得不说我在字节其实干得晚的是常态，主要是晚走可以直接滴滴夜间通行回去，公司付费，有时候真的懒得走回去，就算没事做（一般是有的）在公司摸摸鱼感觉也还好，毕竟回去也没什么事做。有的大哥真的是听说一两点还在干，不得不说绩效压力真的是太恐怖了。</p>
+<h1 id="我超，开学"><a href="#我超，开学" class="headerlink" title="我超，开学"></a>我超，开学</h1><p>回来干了一周就开学了，其实事情就变得棘手起来了，一开始想看看问辅导员能不能请一个月假，得到的答案当然是不行。有时候我真的无语啊有些东西，懒得说了，懂得都懂。</p>
+<p>于是只能择时翘课，早八是基本可以上的，然后有些课不签到就不去了，签到的课在下午的话就得中午回来然后上完课再打车回去了。虽然比较麻烦，但好歹算是出勤了全天，感觉是赚的。</p>
+<p>这段时间有连续的一个多月，其实算是比较久的一段时间了，但是想来这段时间我好像就是主要修了不少 Bug 然后就做了一个 Polish？虽然这个 Polish 不得不说确实是感觉比之前的好点了。</p>
+<h1 id="12-周年"><a href="#12-周年" class="headerlink" title="12 周年"></a>12 周年</h1><p>其实我开学还不润的其中一个原因就是因为 3 月份是字节 12 周年，按理说会有不少东西可以嫖吧，至少应该会有一件文化衫。结果说对了，还真只有一件文化衫可以领，那个什么打卡活动的抽奖就没有抽到过。哦对，还有新的卡套，这个是真赢了，离职后把原卡套工卡交了但是新卡套还在手上呢，这下保有字节卡套了。然后因为是在武汉，其实也没有什么 12 周年的氛围，除了窗上和墙上的 11 周年贴纸变成了 12 周年，餐厅播放的电视节目变成了 12 周年相关的视频以外，好像还真没什么变化。</p>
+<p>不过说到视频，不得不说有些宣传视频做得还是真的好啊。比较有印象的一个是在深圳看到的讲一个制伞厂因为抖音起死回生的故事；另一个就是 12 周年后看到的一个讲述抖音怎么影响改变了一些抖音博主原本的生活的视频；当然要说的话还有一个好像是叫《We Are A Bytedancer》的视频也是挺有意思的。<br>不得不还是感慨，虽然抖音确实使不少人沉迷其中荒废度日，但是真的也改变了很多人的生活。</p>
+<p>除此之外，12 周年还有一个就是 12 周年发的下午茶礼盒，里面大概三样东西，如下：<br><img src="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401171513.jpg" alt="下午茶礼盒" loading="lazy"><em>12 周年下午茶礼盒</em><br>不过这个东西有点难绷的，其中有个芝士蛋糕说容易过期让我们尽早吃，结果后来看字节圈有不少人吃了这个东西拉肚子，意思是已经过期了。可是这明明还没过保质期嘛，然后就是回收、就是追责。还好我是吃了没什么事，逃过一劫，不如说当时前一两周就因为乱吃得肠胃炎了，可能这罪当时已经受了。</p>
+<p>哦，还有一个，是 12 周年直播，直播内容不多谈。但是直播答题对了之后就可以抽奖，这个真行吧。但是这个也发生了比较难绷的事，就是直播结束后统一推送了抽奖链接，结果所有人都涌进去……抽奖网站就炸了。<br>还好我深知不能乱刷新的原理，有惊无险的抽到了东西。但有人就没那么幸运了，甚至都不知道抽没抽中。嘛，结果又得复盘、反思了。<br>不过真要说我抽中的这个，最后送过来的是一个充气颈枕，只能说这种东西没用过啦，不知道有没有说法也是。</p>
+<h1 id="爆！"><a href="#爆！" class="headerlink" title="爆！"></a>爆！</h1><p>我是寻思做完最后一个需求就走的，于是在走的那周的周一提了离职申请。没想到啊，没想到，第二天爆的就来了：飞书发全员信说要大规模裁员。<br>我草，这下一石激起千层浪，尤其是知道我们武汉这边飞书基本逃不掉后，大伙直接就都开始聊天商量对策了起来，当天中午就吃了第一顿散伙饭。<br>不得不说也确实，既然都要被裁了，确实也不用怎么拼命干了。早知道要裁我寻思是不是还可以多留一会了，反正估计可能真没事做，现在是调整期，很多工作、需求都有点停了，而且其实也不一定有心情给你做。</p>
+<p>虽然说裁员后只待了两三天，但这两三天的感慨真的比前三个月多得多，看着周围的人突然都在讨论刷题、写简历、找工作真的有点感慨，怎么就突然变成这样了。我草真不能做前后端吧。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>其实按时间顺序写很多东西写不出来。<br>这三个月的实习，我总共差不多修了十个缺陷，写了三个需求，不好说是快还是慢。但是要说学到了吗？确实是学到了的，有一些代码上的东西，比如说 interface、异步加载等；也有一些软件工程上的东西，比如说 FG、技术方案等。<br>也见识到了很多比较友善的同事，一起协作还是比较愉快的；也真的感受到了大厂的福利，同时也感受到了大厂的压力。最后的爆更是给我实实在在地上了一课。</p>
+<p>我个人认为这应该算是一个比较重要的节点，希望之后更重要的事能够顺利吧。最后，祝各位前途似锦、身体健康！</p>
+<p><img src="https://cdn.suwako.cn/aldlss-blog/pic/QQ%E5%9B%BE%E7%89%8720240401175222.gif" alt="献花" loading="lazy"><em>话说我飞书头像就是用的咖波来着，离职的时候还整了个活</em></p>
+</div></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/lark-daily-internship-gains/" rel="prev" title="飞书前端日常实习收获"><span class="icon iconify" data-icon="ri:arrow-left-s-line"></span><span class="post-nav-text">飞书前端日常实习收获</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/lark-daily-internship-interview/" rel="next" title="飞书前端日常实习面经"><span class="post-nav-text">飞书前端日常实习面经</span><span class="icon iconify" data-icon="ri:arrow-right-s-line"></span></a></div></div></div><div class="hty-card" id="comment"><div id="waline"></div><link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@waline/client@v2/dist/waline.css"><script>window.CONFIG.waline.config.path = "/lark-daily-internship-review/"</script><div class="js-Pjax"><script src="/js/comments/waline.js" type="module" defer></script></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2022 – 2024 </span><span class="with-love" id="animate"><span class="icon iconify" data-icon="ri:cloud-line"></span></span><span class="author"> aldlss</span></div><div class="powered"><span>由 <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> 驱动 v7.3.0</span><span class="footer-separator">|</span><span>主题 - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.10.11</span></div><div class="footer-support"><span>背景图出处</span><a class="footer-support-logo" href="https://www.pixiv.net/users/8605991" target="blank" title="fasnakegod"><span>fasnakegod</span></a><span></span></div></footer></div><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><span class="icon iconify" data-icon="ri:arrow-up-s-line"></span><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a><a class="popup-trigger hty-icon-button icon-search" id="search" href="javascript:;" title="搜索"><span class="site-state-item-icon"><span class="icon iconify" data-icon="ri:search-line"></span></span></a><script>window.addEventListener("DOMContentLoaded", () => {
+  // Handle and trigger popup window
+  document.querySelector(".popup-trigger").addEventListener("click", () => {
+    document.querySelector(".popup").classList.add("show");
+    setTimeout(() => {
+      document.querySelector(".search-input").focus();
+    }, 100);
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.querySelector(".popup").classList.remove("show");
+  };
+
+  document.querySelector(".popup-btn-close").addEventListener("click", () => {
+    onPopupClose();
+  });
+
+  window.addEventListener("keyup", event => {
+    if (event.key === "Escape") {
+      onPopupClose();
+    }
+  });
+});
+</script><script defer src="https://fastly.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script><script defer src="https://fastly.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script><script defer src="/js/search/algolia-search.js" type="module"></script><div class="popup search-popup"><div class="search-header"><span class="popup-btn-close close-icon hty-icon-button"><span class="icon iconify" data-icon="ri:close-line"></span></span></div><div class="search-input-container"></div><div class="algolia-results"><div id="algolia-stats"></div><div id="algolia-hits"></div><div class="algolia-pagination" id="algolia-pagination"></div></div></div></body></html>
